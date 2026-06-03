@@ -1,32 +1,41 @@
+//Leia dois vetores de 5 elementos cada (valores inteiros). Crie um terceiro vetor que contenha apenas os elementos que estão em ambos os vetores (interseção, sem repetição). 
+//Exemplo: 
+//Vetor 1 → [1, 2, 3, 4, 5] 
+//Vetor 2 → [3, 4, 5, 6, 7] 
+//Resultado → [3, 4, 5] 
+
+// não use .push , .length , .string e outras funções de array, apenas atribuição direta e loops para manipular os vetores.
 let vetor1 = [];
 let vetor2 = [];
-let resultadoFinal = [];
+let resultado = [];
+let indiceResultado = 0;
 for (let i = 0; i < 5; i++) {
-    let numero1 = Number(prompt('Digite um número inteiro para o vetor 1:\n numero ' + (i + 1) + ': '));
+    let numero1 = Number(prompt("Digite um número inteiro para o vetor 1:"+ (i + 1)));
     vetor1[i] = numero1;
 }
 for (let i = 0; i < 5; i++) {
-    let numero2 = Number(prompt('Digite um número inteiro para o vetor 2:\n numero ' + (i + 1) + ': '));
+    let numero2 = Number(prompt("Digite um número inteiro para o vetor 2:"+ (i + 1)));
     vetor2[i] = numero2;
 }
 for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 5; j++) {
         if (vetor1[i] === vetor2[j]) {
             let jaExiste = false;
-            for (let k = 0; k < resultadoFinal.length; k++) {
-                if (resultadoFinal[k] === vetor1[i]) {
+            for (let k = 0; k < indiceResultado; k++) {
+                if (resultado[k] === vetor1[i]) {
                     jaExiste = true;
                     break;
                 }
             }
             if (!jaExiste) {
-                resultadoFinal[resultadoFinal.length] = vetor1[i];
+                resultado[indiceResultado] = vetor1[i];
+                indiceResultado++;
             }
         }
     }
 }
-let resultadoString = "Elementos em ambos os vetores (interseção):\n";
-for (let i = 0; i < resultadoFinal.length; i++) {
-    resultadoString += resultadoFinal[i] + "\n";
+let resultadoFinal = "Elementos em ambos os vetores:\n";
+for (let i = 0; i < indiceResultado; i++) {
+    resultadoFinal += resultado[i] + "\n";
 }
-alert(resultadoString);
+alert(resultadoFinal);
