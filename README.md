@@ -57,18 +57,4 @@ Programa que lê dois vetores de 5 elementos cada (valores inteiros). O algoritm
 * **Node.js / Navegador:** Ambientes de execução para testar os scripts.
 
 ---
-
-## 🚀 Como Executar
-
-Você pode testar os algoritmos executando os arquivos `.js` diretamente no terminal através do Node.js, ou integrando-os a uma página HTML simples.
-
-**Via Terminal (Node.js):**
-```bash
-# Clone o repositório
-$ git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-
-# Acesse a pasta
-$ cd nome-do-repositorio
-
-# Execute o arquivo desejado (exemplo da tarefa 1)
-$ node tarefa1.js
+<img width="1000" height="500" alt="SoloLevelingOreDakeLevelUpNaKenGIF" src="https://github.com/user-attachments/assets/67cfdc45-28bf-4fe9-af24-aea156dda119" />
